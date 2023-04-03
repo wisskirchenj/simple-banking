@@ -33,3 +33,6 @@ Have fun!
 ## Progress
 
 01.04.23 Project started - gitHub repo and project structure setup.
+
+03.04.23 Stage 1 completed - creation of credit cards, user session to login to account, used @patch.object of
+unittest.mock to replace method with mock.

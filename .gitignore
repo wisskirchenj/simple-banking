@@ -9,3 +9,4 @@
 /dataSources.local.xml
 /build
 /out
+/.pytest_cache
