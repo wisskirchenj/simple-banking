@@ -6,7 +6,7 @@ project is to further practice and stay in touch with Python programming.
 ## Technology / External Libraries
 
 - Python 3.11.2,
-- with packages: io, unittest, unittest.mock
+- with packages: random, unittest, unittest.mock, parameterized
 
 ## Repository Contents
 
@@ -36,3 +36,6 @@ Have fun!
 
 03.04.23 Stage 1 completed - creation of credit cards, user session to login to account, used @patch.object of
 unittest.mock to replace method with mock.
+
+04.04.23 Stage 2 completed - implement luhn algorithm for checksum to yield valid credit card number. Parameterized
+tests with package parameterized.
