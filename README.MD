@@ -5,8 +5,8 @@ project is to further practice and stay in touch with Python programming.
 
 ## Technology / External Libraries
 
-- Python 3.11.2,
-- with packages: random, unittest, unittest.mock, parameterized
+- Python 3.11.3,
+- with packages: SQLAlchemy ORM & Core 2.0.9, typing, typing_extensions, random, os, unittest, unittest.mock, parameterized
 
 ## Repository Contents
 
@@ -16,7 +16,7 @@ The sources of main project tasks (4 stages) and pytest testing.
 
 Install the wheel file using pip after clone/fork:
 
-    > pip install dist/banking-3.11.2.post1-py3-none-any.whl
+    > pip install dist/banking-3.11.3.post1-py3-none-any.whl
 
 ## Program description
 
@@ -39,3 +39,6 @@ unittest.mock to replace method with mock.
 
 04.04.23 Stage 2 completed - implement luhn algorithm for checksum to yield valid credit card number. Parameterized
 tests with package parameterized.
+
+08.04.23 Stage 3 completed - bind SQLite database with SQLAlchemy 2.0.9 to the credit card accounts. Use new Declarative
+ORM-mapping of SQLAlchemy with Dataclasses.

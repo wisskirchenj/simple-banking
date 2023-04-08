@@ -1,9 +1,8 @@
 import unittest
-from unittest.mock import patch, MagicMock
 
 from parameterized import parameterized
 
-from banking.account import Account
+from banking.account import Account, create_account
 
 
 class AccountTest(unittest.TestCase):
@@ -13,7 +12,7 @@ class AccountTest(unittest.TestCase):
         self.is_valid_card_number(card_number)
 
     def test_generated_account(self):
-        account = Account([])
+        account = create_account()
         self.is_valid_card_number(account.number)
         self.assertEqual(4, len(account.pin))
         self.assertTrue(account.pin.isdigit())
@@ -25,15 +24,6 @@ class AccountTest(unittest.TestCase):
         self.assertEqual('400000', card_number[:6])
         self.assertEqual(Account.get_luhn_checksum(card_number[:-1]), card_number[-1])
 
-    @patch.object(Account, 'generate_card_number')
-    def test_card_numbers_unique(self, mock_gen: MagicMock):
-        mock_gen.side_effect = self.mock_generate_four_ids_only
-        account_keys = set()
-        for i in range(4):
-            acc = Account(account_keys)
-            account_keys.add(acc.number)
-        self.assertSetEqual(set(map(str, range(4))), account_keys)
-
     @parameterized.expand([
         ['3', '400000844943340'],
         ['2', '400000000000000'],
@@ -43,7 +33,3 @@ class AccountTest(unittest.TestCase):
         self.assertEqual(expected_digit, Account.get_luhn_checksum(number_without_checksum))
         self.assertEqual(expected_digit, Account.get_luhn_checksum(number_without_checksum))
         self.assertEqual(expected_digit, Account.get_luhn_checksum(number_without_checksum))
-
-    @staticmethod
-    def mock_generate_four_ids_only():
-        return Account.random_id(4)
