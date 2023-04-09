@@ -28,7 +28,7 @@ class Banking:
         account = self.db_manager.find_account(card_number)
         if account and account.pin == pin:
             print('\nYou have successfully logged in!')
-            return UserSession(account).run()
+            return UserSession(self.db_manager, account).run()
         else:
             print('\nWrong card number or PIN!')
 

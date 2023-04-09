@@ -19,12 +19,19 @@ class DatabaseManager:
         while self.find_account(account.number) is not None:
             account = create_account()
         self.session.add(account)
-        self.session.commit()
+        self.commit()
         return account
+
+    def commit(self):
+        self.session.commit()
+
+    def delete(self, account: Account):
+        self.session.delete(account)
+        self.commit()
 
 
 def init_database(filename: str) -> Engine:
-    engine = create_engine('sqlite+pysqlite:///' + filename, echo=True)
+    engine = create_engine('sqlite+pysqlite:///' + filename, echo=False)
     if ACCOUNT_TABLE not in inspect(engine).get_table_names():
         Base.metadata.create_all(engine)
     return engine

@@ -13,6 +13,7 @@ src/banking/user_session.py
 src/banking/__pycache__/__init__.cpython-311.pyc
 src/banking/__pycache__/account.cpython-311.pyc
 src/banking/__pycache__/alchemy_base.cpython-311.pyc
+src/banking/__pycache__/banking_main.cpython-311.pyc
 src/banking/__pycache__/database_manager.cpython-311.pyc
 src/banking/__pycache__/input_utils.cpython-311.pyc
 src/banking/__pycache__/user_session.cpython-311.pyc
@@ -20,8 +21,11 @@ src/simple_banking.egg-info/PKG-INFO
 src/simple_banking.egg-info/SOURCES.txt
 src/simple_banking.egg-info/dependency_links.txt
 src/simple_banking.egg-info/top_level.txt
+test/card.s3db
 test/test.s3db
 test/test_account.py
+test/test_banking_main.py
 test/test_database_manager.py
 test/__pycache__/test_account.cpython-311-pytest-7.2.2.pyc
+test/__pycache__/test_banking_main.cpython-311-pytest-7.2.2.pyc
 test/__pycache__/test_database_manager.cpython-311-pytest-7.2.2.pyc

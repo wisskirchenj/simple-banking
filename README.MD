@@ -6,7 +6,7 @@ project is to further practice and stay in touch with Python programming.
 ## Technology / External Libraries
 
 - Python 3.11.3,
-- with packages: SQLAlchemy ORM & Core 2.0.9, typing, typing_extensions, random, os, unittest, unittest.mock, parameterized
+- with packages: SQLAlchemy (ORM & Core) 2.0.9, typing, typing_extensions, random, os, unittest, unittest.mock, parameterized
 
 ## Repository Contents
 
@@ -28,7 +28,7 @@ Have fun!
 
 ## Project completion
 
-[//]: # (Project was completed on 26.02.23)
+Project was completed on 09.04.23
 
 ## Progress
 
@@ -42,3 +42,6 @@ tests with package parameterized.
 
 08.04.23 Stage 3 completed - bind SQLite database with SQLAlchemy 2.0.9 to the credit card accounts. Use new Declarative
 ORM-mapping of SQLAlchemy with Dataclasses.
+
+08.04.23 Final Stage 4 completed - Add deposit, transfer and close account functionality. Full coverage integration 
+testing with mock input and mocking random.
