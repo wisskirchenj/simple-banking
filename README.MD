@@ -43,5 +43,5 @@ tests with package parameterized.
 08.04.23 Stage 3 completed - bind SQLite database with SQLAlchemy 2.0.9 to the credit card accounts. Use new Declarative
 ORM-mapping of SQLAlchemy with Dataclasses.
 
-08.04.23 Final Stage 4 completed - Add deposit, transfer and close account functionality. Full coverage integration 
+09.04.23 Final Stage 4 completed - Add deposit, transfer and close account functionality. Full coverage integration 
 testing with mock input and mocking random.
