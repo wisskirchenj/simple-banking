@@ -11,11 +11,15 @@
       <excludeFolder url="file://$MODULE_DIR$/.idea/sonarlint" />
       <excludeFolder url="file://$MODULE_DIR$/.pytest_cache" />
       <excludeFolder url="file://$MODULE_DIR$/build" />
+      <excludeFolder url="file://$MODULE_DIR$/.idea/dataSources" />
     </content>
-    <orderEntry type="jdk" jdkName="Python 3.11.3" jdkType="Python SDK" />
+    <orderEntry type="inheritedJdk" />
     <orderEntry type="sourceFolder" forTests="false" />
   </component>
   <component name="PackageRequirementsSettings">
     <option name="versionSpecifier" value="Greater or equal (&gt;=x.y.z)" />
+  </component>
+  <component name="SonarLintModuleSettings">
+    <option name="uniqueId" value="3ea4f957-d3cb-460d-b783-4c20a0a4ea0e" />
   </component>
 </module>
